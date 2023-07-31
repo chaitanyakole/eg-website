@@ -94,9 +94,11 @@ const columns = (e) => [
           facilitator_user: { first_name, last_name },
         },
       } = row;
-      return first_name || last_name
-        ? `${first_name}${last_name ? ` ${last_name}` : ""}`
-        : "-";
+      const fullName =
+        first_name || last_name
+          ? `${first_name}${last_name ? ` ${last_name}` : ""}`
+          : "-";
+      return fullName !== "" ? fullName : "-";
     },
   },
   {
