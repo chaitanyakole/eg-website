@@ -5,25 +5,13 @@ import {
   ImageView,
   AdminTypo,
   enumRegistryService,
-  enrollmentDateOfBirth,
 } from "@shiksha/common-lib";
 import { ChipStatus } from "component/BeneficiaryStatus";
-import Chip from "component/Chip";
-import Clipboard from "component/Clipboard";
 import moment from "moment";
-import {
-  HStack,
-  VStack,
-  Modal,
-  Image,
-  Text,
-  ScrollView,
-  Input,
-} from "native-base";
+import { HStack, VStack, Image, Text, ScrollView } from "native-base";
 
 import React from "react";
 import DataTable from "react-data-table-component";
-import { useNavigate } from "react-router-dom";
 const customStyles = {
   rows: {
     style: {
