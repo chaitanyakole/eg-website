@@ -153,6 +153,8 @@ const CampSettings = React.lazy(() =>
   import("pages/front-end/Camp/CampSetting")
 );
 
+const CampSessions = React.lazy(() => import("pages/admin/camps/CampSession"));
+
 export default [
   { path: "/form", component: Home },
   {
@@ -315,5 +317,6 @@ export default [
     path: "/camps/:id/kit_material_deatails",
     component: CampKitMaterialDetails,
   },
+  { path: "/camps/:id/sessions", component: CampSessions },
   { path: "*", component: Dashboard },
 ];
